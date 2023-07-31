@@ -37,6 +37,7 @@ Cypress.Commands.add('getCall', (url) => {
     cy.request({
         method: 'GET',
         url: url,
+        failOnStatusCode: false,
         headers: {
             'x-session-token': 'authorized-user',
             'content-type': 'application/json'
@@ -44,12 +45,13 @@ Cypress.Commands.add('getCall', (url) => {
         }
     })
 })
-Cypress.Commands.add('postCall', (url, data) => {
+Cypress.Commands.add('postCall', (url, data, headers) => {
     cy.request({
         method: 'POST',
         url: url,
         body: data,
-        headers: {
+        failOnStatusCode: false,
+        headers: headers || {
             'x-session-token': 'authorized-user',
             'content-type': 'application/json'
 
