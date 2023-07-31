@@ -1,0 +1,12 @@
+{
+    "baseUrl": "https://localhost:8080",
+    "env": {
+        "dev": "http://google.com",
+        "staging": "http://gmail.com"
+    },
+    "db": {
+        "host": "127.0.0.1",
+        "user": "YOUR_USERNAME",
+        "password": "YOUR_PASSWORD"
+    }
+}

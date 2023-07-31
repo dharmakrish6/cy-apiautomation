@@ -1,0 +1,19 @@
+{
+  "name": "learncypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^8.1.0",
+    "faker": "^6.6.6",
+    "aws-sdk": "^2.1012.0",
+    "mock-aws-s3": "^4.0.2",
+    "nock": "^13.1.4"
+  }
+}
